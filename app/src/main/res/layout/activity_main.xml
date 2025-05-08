@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday Muskan 💕"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Scrollable Grid -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:gravity="center_horizontal">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:alignmentMode="alignMargins"
+                app:columnCount="2"
+                app:rowCount="3"
+                app:useDefaultMargins="true">
+
+                <!-- Card 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/btnGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="📸\nGallery"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@android:color/transparent"
+                        android:textColor="#D81B60"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 2 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/loveMeterBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="😍\nLove Meter"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@android:color/transparent"
+                        android:textColor="#D81B60"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/btnNotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="💌\nLove Notes"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@android:color/transparent"
+                        android:textColor="#D81B60"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 4 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/btnVideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="🎥\nVideo Message"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@android:color/transparent"
+                        android:textColor="#D81B60"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 5 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/btnTimeline"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="💕\n Timeline of Memories"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@android:color/transparent"
+                        android:textColor="#D81B60"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/btnFuture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="💖 \nLetters to Future Muskan"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@android:color/transparent"
+                        android:textColor="#D81B60"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/btnScratch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="🎁\n Scratch Card Surprise"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@android:color/transparent"
+                        android:textColor="#D81B60"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.gridlayout.widget.GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp"
+    android:id="@+id/main"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/titleScratch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎁 Scratch Your Surprise"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <com.example.formuskan.ScratchView
+        android:id="@+id/scratchView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/titleScratch"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
