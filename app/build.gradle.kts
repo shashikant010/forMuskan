@@ -43,6 +43,6 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation("com.github.bumptech.glide:glide:4.15.1")
     implementation ("com.daimajia.androidanimations:library:2.4@aar")
-    implementation("com.github.chibde:audiovisualizer:2.2.0")
+    implementation("io.github.gautamchibde:audiovisualizer:2.2.5")
 
 }

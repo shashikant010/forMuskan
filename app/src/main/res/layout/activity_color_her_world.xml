@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/colorWorldLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    >
+
+    <!-- Grayscale Image -->
+    <ImageView
+        android:id="@+id/imageGray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/us_gray" />
+
+    <!-- Color Image (Initially invisible, fades in) -->
+    <ImageView
+        android:id="@+id/imageColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/us"
+        android:alpha="0" />
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/loveMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You color my world ❤️"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:alpha="0"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_transparent_bg"
+        android:padding="16dp" />
+
+</RelativeLayout>

@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintHorizontal_bias="0.5" />
 
     <!-- Scrollable Grid -->
@@ -45,12 +45,13 @@
                 app:alignmentMode="alignMargins"
                 app:columnCount="2"
                 app:rowCount="3"
-                app:useDefaultMargins="true">
+                app:useDefaultMargins="true"
+                >
 
                 <!-- Card 1 -->
                 <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:cardCornerRadius="24dp"
                     app:cardElevation="8dp"
                     app:cardBackgroundColor="#FFFFFF">
@@ -71,8 +72,8 @@
 
                 <!-- Card 2 -->
                 <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:cardCornerRadius="24dp"
                     app:cardElevation="8dp"
                     app:cardBackgroundColor="#FFFFFF">
@@ -93,8 +94,8 @@
 
                 <!-- Card 3 -->
                 <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:cardCornerRadius="24dp"
                     app:cardElevation="8dp"
                     app:cardBackgroundColor="#FFFFFF">
@@ -115,17 +116,17 @@
 
                 <!-- Card 4 -->
                 <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:cardCornerRadius="24dp"
                     app:cardElevation="8dp"
                     app:cardBackgroundColor="#FFFFFF">
 
                     <Button
-                        android:id="@+id/btnVideo"
+                        android:id="@+id/btnComplete"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="🎥\nVideo Message"
+                        android:text="🫵\nYou Complete Me"
                         android:textAlignment="center"
                         android:gravity="center"
                         android:textAllCaps="false"
@@ -137,8 +138,8 @@
 
                 <!-- Card 5 -->
                 <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:cardCornerRadius="24dp"
                     app:cardElevation="8dp"
                     app:cardBackgroundColor="#FFFFFF">
@@ -159,8 +160,8 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:cardCornerRadius="24dp"
                     app:cardElevation="8dp"
                     app:cardBackgroundColor="#FFFFFF">
@@ -180,8 +181,8 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:cardCornerRadius="24dp"
                     app:cardElevation="8dp"
                     app:cardBackgroundColor="#FFFFFF">
@@ -191,6 +192,27 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="🎁\n Scratch Card Surprise"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@android:color/transparent"
+                        android:textColor="#D81B60"
+                        android:textSize="18sp"
+                        android:padding="8dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <Button
+                        android:id="@+id/btnHear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="🔊\n hear your favorite voice 💞"
                         android:textAlignment="center"
                         android:gravity="center"
                         android:textAllCaps="false"

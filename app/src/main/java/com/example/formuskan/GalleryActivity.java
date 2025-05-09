@@ -38,7 +38,7 @@ public class GalleryActivity extends AppCompatActivity {
             return insets;
         });
         galleryRecyclerView = findViewById(R.id.galleryRecyclerView);
-        galleryRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        galleryRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
         RecyclerView.Adapter adapter= new GalleryAdapter(this,imageIds);
         galleryRecyclerView.setAdapter(adapter);
     }
